@@ -15,3 +15,15 @@ java -jar ./target/SpringPractice-0.0.1-SNAPSHOT.jar  -> fat jar contains both s
 
 # java -jar ./target/SpringPractice-0.0.1-SNAPSHOT.jar.original 
 contains only the source code
+
+## Annotations
+# @SpringBootApplication -> 
+only on main class
+internally use @configuration
+@EnableAutoCOnfiguration
+@ComponentScan
+
+@Bean annotation is also used to provide IOC but it is applied on function not on classes
+
+# @component -> 
+on every class whose object we want to create , IOC /Application context is a container which contains all the class who have @component annotation and when we need it provides us the object of that class
